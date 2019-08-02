@@ -1,0 +1,128 @@
+read all products
+call: /php_template_crud_api/product/read.php
+
+return:
+{
+    "records": [
+        {
+            "id": "42",
+            "name": "Nike Shoes for Men",
+            "description": "Nike Shoes",
+            "price": "12999",
+            "category_id": "3",
+            "category_name": "Motors"
+        },
+        {
+            "id": "31",
+            "name": "Amanda Waller Shirt",
+            "description": "New awesome shirt!",
+            "price": "333",
+            "category_id": "1",
+            "category_name": "Fashion"
+        }
+	]
+}
+
+
+
+
+create products
+call (post): /php_template_crud_api/product/create.php
+body:
+{
+    "name" : "New product 1",
+    "price" : "100",
+    "description" : "Description new product 1.",
+    "category_id" : 2,
+    "created" : "2018-01-01 00:00:00"
+}
+
+return:
+{
+    "message": "Product was created."
+}
+
+
+
+
+read one product
+call (get): /php_template_crud_api/product/read_one.php?id=31
+
+return:
+{
+    "id": "31",
+    "name": "Amanda Waller Shirt",
+    "description": "New awesome shirt!",
+    "price": "333",
+    "category_id": "1",
+    "category_name": "Fashion"
+}
+
+
+
+
+update product
+call (post): /php_template_crud_api/product/update.php
+body:
+{
+    "id": "31",
+    "name": "Amanda Waller Shirt NEW",
+    "price": "333",
+    "description": "New awesome shirt!",  
+    "category_id": "1",
+    "created" : "2018-01-01 00:00:00"
+}
+
+return:
+{
+    "message": "Product was updated."
+}
+
+
+
+
+delete product
+call (post): /php_template_crud_api/product/delete.php
+body:
+{
+    "id" : "43"
+}
+
+return:
+{
+    "message": "Product was deleted."
+}
+
+
+
+
+search products
+call (get): /php_template_crud_api/product/search.php?s=shirt
+
+return:
+{
+    "records": [
+        {
+            "id": "31",
+            "name": "Amanda Waller Shirt NEW",
+            "description": "New awesome shirt!",
+            "price": "333",
+            "category_id": "1",
+            "category_name": "Fashion"
+        },
+        {
+            "id": "6",
+            "name": "Bench Shirt",
+            "description": "The best shirt!",
+            "price": "29",
+            "category_id": "1",
+            "category_name": "Fashion"
+        }
+    ]
+}
+
+
+
+
+
+
