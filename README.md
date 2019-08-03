@@ -1,6 +1,6 @@
 # PHP Rest API Template - CRUD
 
-This is a template for a PHP Rest API that provides CRUD operations in PHP and MySQL based on a CODEOFANINJA (codeofaninja.com) tutorial.
+This is a template for a PHP Rest API that provides CRUD operations in PHP and MySQL.
 
 ## Some hightlights:
 
@@ -148,3 +148,6 @@ return:
     ]
 }
 ```
+
+## Reference
+Codeofaninja Tutorials - codeofaninja.com
