@@ -10,7 +10,7 @@ This is a template for a PHP Rest API that provides CRUD operations in PHP and M
   * retrieve data
 * Pagination
 
-## To validate:
+## Live application:
 
 ### Read all products
 call: https://niltonpaes.website/php_templates/php_template_crud_api/product/read.php
