@@ -43,6 +43,7 @@ return:
 
 ### Create product
 call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/create.php
+
 body:
 ```
 {
@@ -81,6 +82,7 @@ return:
 
 ### Update product
 call (post): /php_template_crud_api/product/update.php
+
 body:
 ```
 {
@@ -103,6 +105,7 @@ return:
 
 ### Delete product
 call (post): /php_template_crud_api/product/delete.php
+
 body:
 ```
 {
