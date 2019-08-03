@@ -41,9 +41,10 @@ return:
 
 
 
-create products
-call (post): /php_template_crud_api/product/create.php
+### Create product
+call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/create.php
 body:
+```
 {
     "name" : "New product 1",
     "price" : "100",
@@ -51,19 +52,21 @@ body:
     "category_id" : 2,
     "created" : "2018-01-01 00:00:00"
 }
-
+```
 return:
+```
 {
     "message": "Product was created."
 }
+```
 
 
 
-
-read one product
+### Read one product
 call (get): /php_template_crud_api/product/read_one.php?id=31
 
 return:
+```
 {
     "id": "31",
     "name": "Amanda Waller Shirt",
@@ -72,13 +75,14 @@ return:
     "category_id": "1",
     "category_name": "Fashion"
 }
+```
 
 
 
-
-update product
+### Update product
 call (post): /php_template_crud_api/product/update.php
 body:
+```
 {
     "id": "31",
     "name": "Amanda Waller Shirt NEW",
@@ -87,34 +91,38 @@ body:
     "category_id": "1",
     "created" : "2018-01-01 00:00:00"
 }
-
+```
 return:
+```
 {
     "message": "Product was updated."
 }
+```
 
 
 
-
-delete product
+### Delete product
 call (post): /php_template_crud_api/product/delete.php
 body:
+```
 {
     "id" : "43"
 }
-
+```
 return:
+```
 {
     "message": "Product was deleted."
 }
+```
 
 
 
-
-search products
+### Search products
 call (get): /php_template_crud_api/product/search.php?s=shirt
 
 return:
+```
 {
     "records": [
         {
@@ -135,10 +143,4 @@ return:
         }
     ]
 }
-
-
-
-
-
-
-
+```
