@@ -9,6 +9,7 @@ This is a template for a PHP Rest API that provides CRUD operations in PHP and M
   * execute DML commands
   * retrieve data
 * Pagination
+* JSON manipulation
 
 ## Live application:
 
