@@ -64,7 +64,7 @@ return:
 
 
 ### Read one product
-call (get): /php_template_crud_api/product/read_one.php?id=31
+call (get): https://niltonpaes.website/php_templates/php_template_crud_api/product/read_one.php?id=31
 
 return:
 ```
@@ -81,7 +81,7 @@ return:
 
 
 ### Update product
-call (post): /php_template_crud_api/product/update.php
+call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/update.php
 
 body:
 ```
@@ -104,7 +104,7 @@ return:
 
 
 ### Delete product
-call (post): /php_template_crud_api/product/delete.php
+call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/delete.php
 
 body:
 ```
@@ -122,7 +122,7 @@ return:
 
 
 ### Search products
-call (get): /php_template_crud_api/product/search.php?s=shirt
+call (get): https://niltonpaes.website/php_templates/php_template_crud_api/product/search.php?s=shirt
 
 return:
 ```
