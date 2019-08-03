@@ -1,7 +1,22 @@
-read all products
-call: /php_template_crud_api/product/read.php
+# PHP Rest API Template - CRUD
+
+This is a template for a PHP Rest API that provides CRUD operations in PHP and MySQL based on a CODEOFANINJA (codeofaninja.com) tutorial.
+
+## Some hightlights:
+
+* Use of PDO extension to connect to MySQL (config/database.php)
+  * connect
+  * execute DML commands
+  * retrieve data
+* Pagination
+
+## To validate:
+
+### Read all products
+call: https://niltonpaes.website/php_templates/php_template_crud_api/product/read.php
 
 return:
+```
 {
     "records": [
         {
@@ -22,13 +37,15 @@ return:
         }
 	]
 }
+```
 
 
 
+### Create product
+call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/create.php
 
-create products
-call (post): /php_template_crud_api/product/create.php
 body:
+```
 {
     "name" : "New product 1",
     "price" : "100",
@@ -36,19 +53,21 @@ body:
     "category_id" : 2,
     "created" : "2018-01-01 00:00:00"
 }
-
+```
 return:
+```
 {
     "message": "Product was created."
 }
+```
 
 
 
-
-read one product
-call (get): /php_template_crud_api/product/read_one.php?id=31
+### Read one product
+call (get): https://niltonpaes.website/php_templates/php_template_crud_api/product/read_one.php?id=31
 
 return:
+```
 {
     "id": "31",
     "name": "Amanda Waller Shirt",
@@ -57,13 +76,15 @@ return:
     "category_id": "1",
     "category_name": "Fashion"
 }
+```
 
 
 
+### Update product
+call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/update.php
 
-update product
-call (post): /php_template_crud_api/product/update.php
 body:
+```
 {
     "id": "31",
     "name": "Amanda Waller Shirt NEW",
@@ -72,34 +93,39 @@ body:
     "category_id": "1",
     "created" : "2018-01-01 00:00:00"
 }
-
+```
 return:
+```
 {
     "message": "Product was updated."
 }
+```
 
 
 
+### Delete product
+call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/delete.php
 
-delete product
-call (post): /php_template_crud_api/product/delete.php
 body:
+```
 {
     "id" : "43"
 }
-
+```
 return:
+```
 {
     "message": "Product was deleted."
 }
+```
 
 
 
-
-search products
-call (get): /php_template_crud_api/product/search.php?s=shirt
+### Search products
+call (get): https://niltonpaes.website/php_templates/php_template_crud_api/product/search.php?s=shirt
 
 return:
+```
 {
     "records": [
         {
@@ -120,9 +146,4 @@ return:
         }
     ]
 }
-
-
-
-
-
-
+```
