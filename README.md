@@ -1,20 +1,18 @@
-# PHP Rest API Template - CRUD
+# PHP Rest API Template - CRUD (PHP, MySQL)
 
-This is a template for a PHP Rest API that provides CRUD operations in PHP and MySQL.
+This is a PHP Rest API template that provides CRUD operations.
 
-## Some hightlights:
+## Hightlights:
 
-* Use of PDO extension to connect to MySQL (config/database.php)
-  * connect
-  * execute DML commands
-  * retrieve data
+* PDO extension to communincate with MySQL
 * Pagination
-* JSON manipulation
+* MySQL
+* JSON
 
 ## Live application:
 
 ### Read all products
-call: https://niltonpaes.website/php_templates/php_template_crud_api/product/read.php
+call: https://phptemplates.swtas.com/php_template_crud_api/product/read.php
 
 return:
 ```
@@ -43,7 +41,7 @@ return:
 
 
 ### Create product
-call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/create.php
+call (post): https://phptemplates.swtas.com/php_template_crud_api/product/create.php
 
 body:
 ```
@@ -65,7 +63,7 @@ return:
 
 
 ### Read one product
-call (get): https://niltonpaes.website/php_templates/php_template_crud_api/product/read_one.php?id=31
+call (get): https://phptemplates.swtas.com/php_template_crud_api/product/read_one.php?id=31
 
 return:
 ```
@@ -82,7 +80,7 @@ return:
 
 
 ### Update product
-call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/update.php
+call (post): https://phptemplates.swtas.com/php_template_crud_api/product/update.php
 
 body:
 ```
@@ -105,7 +103,7 @@ return:
 
 
 ### Delete product
-call (post): https://niltonpaes.website/php_templates/php_template_crud_api/product/delete.php
+call (post): https://phptemplates.swtas.com/php_template_crud_api/product/delete.php
 
 body:
 ```
@@ -123,7 +121,7 @@ return:
 
 
 ### Search products
-call (get): https://niltonpaes.website/php_templates/php_template_crud_api/product/search.php?s=shirt
+call (get): https://phptemplates.swtas.com/php_template_crud_api/product/search.php?s=shirt
 
 return:
 ```
