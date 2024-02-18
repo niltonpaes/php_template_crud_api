@@ -4,7 +4,7 @@ This is a PHP Rest API template that provides CRUD operations.
 
 ## Highlights:
 
-* PDO extension to communincate with MySQL
+* PDO extension for MySQL communication
 * Pagination
 * MySQL
 * JSON
